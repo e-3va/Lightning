@@ -7,6 +7,7 @@ void setup()
   strokeWeight(5);
   imageMode(CENTER);
   img = loadImage("cloud.png");
+  frameRate(15);
   
 }
 void draw()
@@ -29,10 +30,13 @@ void draw()
 }
 void mousePressed()
 {
-  background(0);
-  int startX = 0;
-  int startY = 150;
+  background(255);
+  //int startX = 0;
+  //int startY = 150;
   //int endX = 0;
   //int endY = 150;
+}
 
+void mouseReleased(){
+  background((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
 }
